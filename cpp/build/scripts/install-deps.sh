@@ -32,4 +32,4 @@ ${VCPKG_CMD} install gflags
 ${VCPKG_CMD} install spdlog
 ${VCPKG_CMD} install yaml-cpp
 ${VCPKG_CMD} install cli11
-${VCPKG_CMD} install opentelemetry-cpp
+${VCPKG_CMD} install opentelemetry-cpp[otlp-grpc]
