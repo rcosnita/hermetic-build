@@ -33,3 +33,4 @@ ${VCPKG_CMD} install spdlog
 ${VCPKG_CMD} install yaml-cpp
 ${VCPKG_CMD} install cli11
 ${VCPKG_CMD} install opentelemetry-cpp[otlp-grpc]
+${VCPKG_CMD} install arrow[csv] arrow[filesystem] arrow[json] arrow[parquet] arrow[flight] arrow[flightsql]

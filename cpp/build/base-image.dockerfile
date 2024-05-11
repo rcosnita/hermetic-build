@@ -67,7 +67,7 @@ RUN ln -s /usr/bin/gcc /usr/bin/aarch64-linux-gnu-gcc && \
 ADD cpp/build/scripts/install-deps.sh install-deps.sh
 RUN chown ${DEV_USER}:${DEV_USER} install-deps.sh && \
   export PATH=${DEV_FOLDER}/vcpkg:${PATH} && \
-  dnf install -y kernel-headers && \
+  dnf install -y kernel-headers flex && \
   chmod u+x install-deps.sh && \
   ./install-deps.sh ${DEV_FOLDER} ${TARGETARCH}
 
